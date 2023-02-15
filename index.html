@@ -1,12 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    
+    <h1>Form</h1>
+    <!-- <form method="post" action=""> -->
+    <form>
+        <label for="name">Nombre: </label>
+        <!-- También podríamos agregar el atribbute "class" para estilizarlo con CSS -->
+        <!-- SI VAN A ESTILIZARLO CON CSS NO UTILIZAR EL ID (Por buenas prácticas) -->
+        <input type="text" id="name" name="name">
+        <label for="lastname">Apellido: </label>
+        <input type="text" id="lastname" name="lastname" required>
+        <!-- <input type="submit"> -->
+        <!-- También podríamos poner un button como se muestra en el ejemplo -->
+        <label for="email">Email: </label>
+        <input type="email" id="email" name="email">
+        <label for="password">Password: </label>
+        <input type="password" id="password" name="password">
+        <!-- <input type="checkbox"> -->
+        <h2>Pizzería que NO permite combinar sabores</h2> <input type="radio" id="muzza" name="sabores">
+        <label for="muzza">Muzza</label>
+        <input type="radio" id="roquefort" name="sabores">
+        <label for="roquefort">Roquefort</label>
+        <input type="radio" id="napolitana" name="sabores">
+        <label for="napolitana">Napolitana</label>
+        <input type="radio" id="rucula" name="sabores">
+        <label for="rucula">Rúcula</label>
+        <h2>Pizzería que SI permite combinar sabores</h2> 
+        <input type="checkbox" id="muzza-checkbox" name="muzza-checkbox">
+        <label for="muzza-checkbox">Muzza</label>
+        <input type="checkbox" id="roquefort-checkbox" name="roquefort-checkbox">
+        <label for="roquefort-checkbox">Roquefort</label>
+        <input type="checkbox" id="napolitana-checkbox" name="napolitana-checkbox">
+        <label for="napolitana-checkbox">Napolitana</label>
+        <input type="checkbox" id="rucula-checkbox" name="rucula-checkbox">
+        <label for="rucula-checkbox">Rúcula</label>
+
+        <input type="date">
+
+        <input type="reset" id="reset" name="reset">
+        <button type="submit">Enviar formulario</button>
+    </form>
 </body>
+
 </html>
